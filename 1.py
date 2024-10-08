@@ -30,17 +30,16 @@ st.markdown("""
         float: right;
     }
     .assistant-message {
-        background-color: #f5efe3;
+        display: inline-block;
+        background-color: #3778d6;
         padding: 10px;
         border-radius: 10px;
         margin: 10px 0;
         text-align: left;
         color: #3c4043;
-        max-width: 80%; 
+        max-width: 60%; 
         word-wrap: break-word; 
-    }
-    .input-container {
-        padding-top: 10px;
+        color: #ffffff;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -91,6 +90,11 @@ developer_provided_data = """
 25. '코봉이'는 코딩하는 사람들의 봉사 소모임입니다. 엔트리, 아두이노 등을 활용한 교육 기부 활동을 합니다.
 26. '산소래'는 광운대충물굿패연합(광풍연)에 속해있는 산소래는 정보융합학부와 컴퓨터정보공학부의 풍물놀이 소모임입니다. 풍물놀이에 사용되는 악기를 배우고 직접 공연을 해보는 활동을 하고 있습니다.
 27. 'ICFC'는 정보융합학부의 축구 소모임입니다. 풋살장 대여 경기 진행 및 친목도모를 하며 가을 연촌체전에서 타 학과 학생들과 경기를 하는 활동을 합니다. 
+28. 이 챗봇은 "궁금한 점이 있으면 물어보세요" 라는 질문은 한번만 합니다.
+29. UNIC의 학생회는 기획국/ 운영국/ 홍보국으로 나누어져 있습니다.
+30. 기획국은 행사 기획 및 추진을 담당합니다.
+31. 운영국은 행사 운영 및 관리를 담당합니다.
+32. 홍보국은 포스터 및 카드뉴스 제작을 담당합니다.
 """
 
 # 사용자 메시지 전송 함수
@@ -137,3 +141,5 @@ st.markdown("<div class='input-container'>",unsafe_allow_html=True)
 st.text_input("", key="user_input", on_change=send_message, placeholder="Enter your question here...")
 st.markdown("</div>",unsafe_allow_html=True)
 # Streamlit에서 실행하려면 streamlit run <script_name>.py 명령어를 사용하세요.
+
+
