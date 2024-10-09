@@ -44,11 +44,13 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Streamlit의 헤더, 푸터, Pro 아이콘 숨기기
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    .stApp {visibility: visible;}
     .viewerBadge_container__1QSob {display: none;}
     </style>
     """
