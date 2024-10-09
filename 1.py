@@ -52,6 +52,7 @@ hide_streamlit_style = """
     header {visibility: hidden;}
     .stApp {visibility: visible;}
     .viewerBadge_container__1QSob {display: none;}
+    ._terminalButton_rix23_138 {display: none;}
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
